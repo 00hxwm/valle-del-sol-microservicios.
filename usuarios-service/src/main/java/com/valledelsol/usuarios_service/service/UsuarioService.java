@@ -18,7 +18,13 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 
-    public Usuario guardar(Usuario usuario){
-        return usuarioRepository.save(usuario);
+    public Usuario registrarUsuario(Usuario u){
+        if (u.getCorreo() == null || !u.getCorreo().contains("@")){
+            throw new RuntimeException("Correo invalido");
+        }
+        if (u.getNombre() == null || u.getNombre().trim().isEmpty()){
+            throw new RuntimeException("el nombre es obligatorio");
+        }
+        return usuarioRepository.save(u);
     }
 }
