@@ -1,8 +1,8 @@
-# 🏙️ Sistema de Gestión de Emergencias - Valle del Sol
+# Sistema de Gestión de Emergencias - Valle del Sol
 
 Este repositorio contiene la arquitectura de microservicios para la Municipalidad de Valle del Sol, diseñada para la detección y gestión de incendios.
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 El sistema se divide en 5 microservicios independientes:
 
@@ -12,8 +12,8 @@ El sistema se divide en 5 microservicios independientes:
 4.  **`alertas-service`**: Notificaciones automáticas (Observer Pattern).
 5.  **`historial-service`**: Análisis de datos históricos.
 
-## 🚀 Instalación General
-Para ejecutar el ecosistema completo:
+## Instalación General
+Para ejecutar el proyecto completo:
 1. Clonar el repositorio.
 2. Entrar en cada carpeta y ejecutar `./mvnw spring-boot:run`.
 *(Próximamente: Configuración con Docker Compose)*.
